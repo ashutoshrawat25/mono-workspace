@@ -36,7 +36,7 @@ module.exports = {
 
       // For hosts (please adjust)
       remotes: {
-        mfeApp: "mfeApp@http://localhost:4300/remoteEntry.js",
+        mfeApp: "mfeApp@https://mono-workspace-s8f9.vercel.app/remoteEntry.js",
       },
 
       shared: share({

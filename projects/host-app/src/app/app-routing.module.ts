@@ -11,7 +11,8 @@ const routes: Routes = [
     path: 'todo',
     loadChildren: () => {
       return loadRemoteModule({
-        remoteEntry: 'http://localhost:4300/remoteEntry.js',
+        remoteEntry:
+          'mfeApp@https://mono-workspace-s8f9.vercel.app/remoteEntry.js',
         remoteName: 'mfeApp',
         exposedModule: './TestModule',
       })
