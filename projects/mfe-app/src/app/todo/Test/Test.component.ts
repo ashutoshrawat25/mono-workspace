@@ -3,13 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-Test',
   templateUrl: './Test.component.html',
-  styleUrls: ['./Test.component.css']
+  styleUrls: ['./Test.component.css'],
 })
 export class TestComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  sendData() {
+    const event = new CustomEvent<string>('event', {
+      detail: 'Hello from mfe to host',
+    });
+    dispatchEvent(event);
   }
-
 }
